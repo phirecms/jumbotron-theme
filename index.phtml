@@ -1,0 +1,53 @@
+<?php include __DIR__ . '/inc/header.phtml'; ?>
+
+    <!-- Main jumbotron for a primary marketing message or call to action -->
+    <div class="jumbotron">
+      <div class="container">
+        <h1>Hello, world!</h1>
+        <p>This is a template for a simple marketing or informational website. It includes a large callout called a jumbotron and three supporting pieces of content. Use it as a starting point to create something more unique.</p>
+        <p><a class="btn btn-success btn-lg" href="#" role="button">Learn more &raquo;</a></p>
+      </div>
+    </div>
+
+    <div class="container marketing">
+      <h1><?=$title;?></h1>
+      <div class="padding-bottom">
+<?php if (isset($content)): ?>
+<?=$content; ?>
+<?php endif; ?>
+      </div>
+
+      <!-- Three columns of text below the carousel -->
+
+<?php include __DIR__ . '/inc/company.phtml'; ?>
+
+    </div>
+      <!-- START THE FEATURETTES -->
+
+    <div class="container">
+      <hr class="featurette-divider">
+
+      <div class="row featurette">
+        <div class="col-md-7">
+          <h2 class="featurette-heading">First featurette heading. <span class="text-muted">It's awesome.</span></h2>
+          <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+        </div>
+        <div class="col-md-5">
+          <img class="featurette-image img-responsive center-block" src="<?=$base_path . $content_path; ?>/themes/jumbotron-theme-1.0/img/placeholder-sm.gif" alt="Generic placeholder image">
+        </div>
+      </div>
+
+      <hr class="featurette-divider">
+
+      <div class="row featurette">
+        <div class="col-md-7 col-md-push-5">
+          <h2 class="featurette-heading">Oh yeah, it's that good. <span class="text-muted">See for yourself.</span></h2>
+          <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+        </div>
+        <div class="col-md-5 col-md-pull-7">
+          <img class="featurette-image img-responsive center-block" src="<?=$base_path . $content_path; ?>/themes/jumbotron-theme-1.0/img/placeholder-sm.gif" alt="Generic placeholder image">
+        </div>
+      </div>
+    </div> <!-- /container -->
+
+<?php include __DIR__ . '/inc/footer.phtml'; ?>
